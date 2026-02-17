@@ -2,24 +2,29 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Mário & Maria | Nosso Casamento</title>
+  <title>Mário & Maria | Casamento</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<audio id="music" loop>
+  <source src="https://cdn.pixabay.com/audio/2022/10/30/audio_1f7bfc9c0c.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
 
 <header class="hero">
   <div class="overlay">
     <h1>Mário & Maria</h1>
     <p class="verse">
-      “Mil cairão ao teu lado, e dez mil à tua direita, mas tu não serás atingido.”  
+      “Mil cairão ao teu lado, e dez mil à tua direita, mas tu não serás atingido.”
       <span>Salmos 91:7</span>
     </p>
     <p class="date">20 de dezembro de 2026 • 16:00</p>
+    <div id="countdown"></div>
   </div>
 </header>
 
@@ -41,21 +46,24 @@
   <p>Mairiporã • SP</p>
 
   <div class="buttons">
-    <a href="https://waze.com/ul/h6gygdkhpk" target="_blank">Abrir no Waze</a>
-    <a href="https://maps.app.goo.gl/bbSJQV8FoyoSqkEh9" target="_blank">Abrir no Google Maps</a>
+    <a href="https://waze.com/ul/h6gygdkhpk" target="_blank">Waze</a>
+    <a href="https://maps.app.goo.gl/bbSJQV8FoyoSqkEh9" target="_blank">Google Maps</a>
   </div>
 
-  <p class="alert">
-    ⚠️ Não digite o endereço no GPS.<br>
-    Utilize apenas os links acima.
-  </p>
+  <p class="alert">⚠️ Utilize apenas os links acima.</p>
 </section>
 
 <section class="section">
-  <h2>Lista de Presentes</h2>
-  <p>Sua presença é essencial!  
-  Caso deseje nos presentear:</p>
+  <h2>Galeria</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+    <img src="https://images.unsplash.com/photo-1529634806980-85c1d5d2c1a4">
+    <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+  </div>
+</section>
 
+<section class="section highlight">
+  <h2>Lista de Presentes</h2>
   <div class="pix-box">
     <p><strong>PIX:</strong> assuncaomario21@icloud.com</p>
     <p><strong>Titular:</strong> Mário Assunção</p>
@@ -63,15 +71,19 @@
   </div>
 </section>
 
-<section class="section highlight">
+<section class="section">
   <h2>Confirme sua Presença</h2>
-
   <form id="rsvpForm">
-    <input type="text" name="nome" placeholder="Seu nome completo" required>
-    <input type="number" name="qtd" placeholder="Quantidade de pessoas" required>
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="number" name="qtd" placeholder="Qtd de pessoas" required>
     <button type="submit">Confirmar Presença</button>
     <p id="msg"></p>
   </form>
+</section>
+
+<section class="section highlight">
+  <h2>QR Code</h2>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://assuncaomario21-beep.github.io/casamento-mario-maria/" alt="QR Code">
 </section>
 
 <footer>
@@ -81,4 +93,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
