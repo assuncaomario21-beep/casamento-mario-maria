@@ -7,11 +7,12 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background: var(--bege);
+  color: #333;
 }
 
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+  background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
   url('https://images.unsplash.com/photo-1529634806980-85c1d5d2c1a4') center/cover;
 }
 
@@ -23,6 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 20px;
 }
 
 h1 {
@@ -30,13 +32,13 @@ h1 {
   font-size: 3rem;
 }
 
-#countdown {
-  margin-top: 20px;
-  font-size: 1.2rem;
+.verse {
+  max-width: 700px;
+  font-style: italic;
 }
 
 .section {
-  padding: 60px 20px;
+  padding: 70px 20px;
   text-align: center;
 }
 
@@ -44,36 +46,91 @@ h1 {
   background: white;
 }
 
-.buttons a, button {
-  background: var(--verde);
-  color: white;
-  padding: 12px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  border: none;
-  margin: 5px;
+.text {
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.9;
+}
+
+.countdown-box {
+  display: flex;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.countdown-box div {
+  background: rgba(255,255,255,.15);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.countdown-box span {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .gallery {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .gallery img {
   width: 280px;
-  border-radius: 10px;
+  border-radius: 12px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: 0;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+.pix-box {
+  background: white;
+  display: inline-block;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+button, .buttons a {
+  background: var(--verde);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 .music-btn {
   position: fixed;
   top: 15px;
   right: 15px;
-  background: var(--verde);
-  color: white;
-  border-radius: 50%;
   width: 45px;
   height: 45px;
-  border: none;
+  border-radius: 50%;
+}
 
+.qr {
+  margin-top: 20px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: .8s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  padding: 30px;
+}
