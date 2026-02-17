@@ -1,184 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mário & Maria | Casamento</title>
+  <meta charset="UTF-8">
+  <title>Mário & Maria | Nosso Casamento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-:root{
-  --verde:#6b7d5b;
-  --bege:#f5f1ea;
-  --texto:#333;
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-
-body{
-  background:var(--bege);
-  color:var(--texto);
-  line-height:1.6;
-}
-
-header{
-  background:var(--verde);
-  color:#fff;
-  text-align:center;
-  padding:70px 20px;
-}
-
-header h1{font-size:3rem}
-header p{margin-top:10px}
-
-section{
-  max-width:900px;
-  margin:auto;
-  padding:60px 20px;
-  opacity:0;
-  transform:translateY(30px);
-  transition:0.8s ease;
-}
-
-section.show{
-  opacity:1;
-  transform:translateY(0);
-}
-
-h2{
-  text-align:center;
-  color:var(--verde);
-  margin-bottom:25px;
-}
-
-.card{
-  background:#fff;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 4px 12px rgba(0,0,0,.08);
-}
-
-.btn{
-  display:inline-block;
-  background:var(--verde);
-  color:#fff;
-  padding:14px 22px;
-  border-radius:8px;
-  text-decoration:none;
-  margin-top:15px;
-}
-
-.btn:hover{opacity:.85}
-
-.contador{
-  margin-top:20px;
-  font-weight:bold;
-}
-
-footer{
-  background:var(--verde);
-  color:#fff;
-  text-align:center;
-  padding:30px 20px;
-  margin-top:40px;
-}
-
-@media(max-width:600px){
-  header h1{font-size:2.2rem}
-}
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-<h1>Mário & Maria</h1>
-<p>20 de dezembro de 2026 • 16h • Mairiporã/SP</p>
-<div class="contador" id="contador"></div>
+<header class="hero">
+  <div class="overlay">
+    <h1>Mário & Maria</h1>
+    <p class="verse">
+      “Mil cairão ao teu lado, e dez mil à tua direita, mas tu não serás atingido.”  
+      <span>Salmos 91:7</span>
+    </p>
+    <p class="date">20 de dezembro de 2026 • 16:00</p>
+  </div>
 </header>
 
-<section>
-<h2>Nossa História</h2>
-<div class="card">
-<p>
-Nossa história começou de forma simples, mas cheia de significado.
-Entre encontros, conversas e sonhos compartilhados, decidimos dar
-um passo importante e celebrar o amor ao lado de pessoas especiais.
-</p>
-</div>
+<section class="section">
+  <h2>Sobre o Casal</h2>
+  <p class="text">
+    O amor nos encontrou de forma leve, cresceu com cumplicidade e se fortaleceu
+    com fé, respeito e parceria.<br><br>
+    Entre sonhos compartilhados e mãos dadas, entendemos que amar é caminhar juntos,
+    mesmo diante dos desafios.<br><br>
+    Hoje celebramos esse amor e convidamos você para fazer parte do dia mais especial
+    das nossas vidas.
+  </p>
 </section>
 
-<section>
-<h2>Cerimônia & Recepção</h2>
-<div class="card">
-<p><strong>📅 Data:</strong> 20/12/2026</p>
-<p><strong>⏰ Horário:</strong> 16:00</p>
-<p><strong>📍 Local:</strong> Fazenda Vale dos Eucaliptos</p>
-<p>Mairiporã – SP</p>
-</div>
+<section class="section highlight">
+  <h2>Cerimônia & Recepção</h2>
+  <p><strong>Fazenda Vale dos Eucaliptos</strong></p>
+  <p>Mairiporã • SP</p>
+
+  <div class="buttons">
+    <a href="https://waze.com/ul/h6gygdkhpk" target="_blank">Abrir no Waze</a>
+    <a href="https://maps.app.goo.gl/bbSJQV8FoyoSqkEh9" target="_blank">Abrir no Google Maps</a>
+  </div>
+
+  <p class="alert">
+    ⚠️ Não digite o endereço no GPS.<br>
+    Utilize apenas os links acima.
+  </p>
 </section>
 
-<section>
-<h2>Como Chegar</h2>
-<div class="card">
-<p><strong>⚠️ IMPORTANTE:</strong> Não digite o endereço no GPS.</p>
-<a class="btn" href="https://waze.com/ul/h6gygdkhpk" target="_blank">Abrir no Waze</a>
-<a class="btn" href="https://maps.app.goo.gl/bbSJQV8FoyoSqkEh9" target="_blank">Abrir no Google Maps</a>
-<p style="margin-top:15px">
-Vindo de Guarulhos ou São Paulo via Rod. Fernão Dias,
-retorne após o Graal no KM 57 (Terra Preta) e acesse a saída no KM 59.
-</p>
-</div>
+<section class="section">
+  <h2>Lista de Presentes</h2>
+  <p>Sua presença é essencial!  
+  Caso deseje nos presentear:</p>
+
+  <div class="pix-box">
+    <p><strong>PIX:</strong> assuncaomario21@icloud.com</p>
+    <p><strong>Titular:</strong> Mário Assunção</p>
+    <button onclick="copiarPix()">Copiar PIX</button>
+  </div>
 </section>
 
-<section>
-<h2>Lista de Presentes</h2>
-<div class="card">
-<p>A sua presença é o nosso maior presente.</p>
-<p><strong>PIX:</strong> assuncaomario21@icloud.com</p>
-<p><strong>Titular:</strong> Mário Assunção</p>
-</div>
-</section>
+<section class="section highlight">
+  <h2>Confirme sua Presença</h2>
 
-<section>
-<h2>Confirmação de Presença</h2>
-<div class="card">
-<p>Por favor, confirme sua presença:</p>
-
-<a class="btn" 
-href="https://wa.me/?text=Olá!%20Confirmo%20minha%20presença%20no%20casamento%20de%20Mário%20e%20Maria.%20Nome:%20_____%20Qtd%20de%20pessoas:%20_____" 
-target="_blank">
-Confirmar pelo WhatsApp
-</a>
-
-</div>
+  <form id="rsvpForm">
+    <input type="text" name="nome" placeholder="Seu nome completo" required>
+    <input type="number" name="qtd" placeholder="Quantidade de pessoas" required>
+    <button type="submit">Confirmar Presença</button>
+    <p id="msg"></p>
+  </form>
 </section>
 
 <footer>
-<p>Com carinho, Mário & Maria 💍</p>
+  <p>Com amor, Mário & Maria 💚</p>
 </footer>
 
-<script>
-// CONTADOR
-const data = new Date("2026-12-20T16:00:00").getTime();
-setInterval(()=>{
-  const agora = new Date().getTime();
-  const d = data - agora;
-  if(d<0){document.getElementById("contador").innerHTML="Chegou o grande dia 💍";return;}
-  const dias = Math.floor(d/(1000*60*60*24));
-  document.getElementById("contador").innerHTML = Faltam ${dias} dias;
-},1000);
-
-// ANIMAÇÃO AO ROLAR
-const sections = document.querySelectorAll("section");
-window.addEventListener("scroll",()=>{
-  sections.forEach(sec=>{
-    const top = sec.getBoundingClientRect().top;
-    if(top < window.innerHeight - 100){
-      sec.classList.add("show");
-    }
-  });
-});
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
+
