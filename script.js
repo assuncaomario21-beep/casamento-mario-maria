@@ -2,10 +2,17 @@ function copiarPix() {
   navigator.clipboard.writeText("assuncaomario21@icloud.com");
   alert("PIX copiado com sucesso!");
 }
-
 function toggleMusic() {
   const music = document.getElementById("music");
-  music.paused ? music.play() : music.pause();
+  const button = document.querySelector(".music-btn");
+
+  if (music.paused) {
+    music.play();
+    button.classList.add("playing");
+  } else {
+    music.pause();
+    button.classList.remove("playing");
+  }
 }
 
 const targetDate = new Date("2026-12-20T16:00:00").getTime();
