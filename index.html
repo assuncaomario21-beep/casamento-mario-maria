@@ -11,49 +11,65 @@
 <body>
 
 <audio id="music" loop>
-  <source src="https://cdn.pixabay.com/audio/2022/10/30/audio_1f7bfc9c0c.mp3" type="audio/mpeg">
+  <source src="https://cdn.pixabay.com/audio/2023/03/28/audio_9c6a33a5a6.mp3" type="audio/mpeg">
 </audio>
 
 <button class="music-btn" onclick="toggleMusic()">🎵</button>
 
 <header class="hero">
-  <div class="overlay">
+  <div class="overlay reveal">
     <h1>Mário & Maria</h1>
     <p class="verse">
       “Mil cairão ao teu lado, e dez mil à tua direita, mas tu não serás atingido.”
       <span>Salmos 91:7</span>
     </p>
+
+    <div class="countdown-box">
+      <div><span id="days"></span><small>Dias</small></div>
+      <div><span id="hours"></span><small>Horas</small></div>
+      <div><span id="minutes"></span><small>Min</small></div>
+    </div>
+
     <p class="date">20 de dezembro de 2026 • 16:00</p>
-    <div id="countdown"></div>
   </div>
 </header>
 
-<section class="section">
-  <h2>Sobre o Casal</h2>
+<section class="section reveal">
+  <h2>Nossa História</h2>
   <p class="text">
-    O amor nos encontrou de forma leve, cresceu com cumplicidade e se fortaleceu
-    com fé, respeito e parceria.<br><br>
-    Entre sonhos compartilhados e mãos dadas, entendemos que amar é caminhar juntos,
-    mesmo diante dos desafios.<br><br>
-    Hoje celebramos esse amor e convidamos você para fazer parte do dia mais especial
-    das nossas vidas.
+    Nos conhecemos em um culto no Jardim Alice, em Guarulhos, em um encontro que parecia simples,
+    mas que Deus já havia escrito com propósito.<br><br>
+
+    Com o tempo, a amizade cresceu, o carinho se fortaleceu e o amor floresceu de forma leve
+    e verdadeira.<br><br>
+
+    O pedido de casamento aconteceu em um cenário inesquecível, no Terraço Itália,
+    marcando para sempre o início do nosso “sim”.<br><br>
+
+    Hoje, mesmo vivendo um tempo de distância — ela no Paraguai e ele no Brasil —
+    seguimos firmes, unidos pela fé, pelo amor e pela certeza de que Deus conduz cada passo
+    até o dia do nosso casamento.
   </p>
 </section>
 
-<section class="section highlight">
+<section class="section highlight reveal">
   <h2>Cerimônia & Recepção</h2>
   <p><strong>Fazenda Vale dos Eucaliptos</strong></p>
   <p>Mairiporã • SP</p>
 
+  <iframe
+    src="https://www.google.com/maps?q=Fazenda+Vale+dos+Eucaliptos+Mairiporã&output=embed"
+    loading="lazy">
+  </iframe>
+
   <div class="buttons">
-    <a href="https://waze.com/ul/h6gygdkhpk" target="_blank">Waze</a>
-    <a href="https://maps.app.goo.gl/bbSJQV8FoyoSqkEh9" target="_blank">Google Maps</a>
+    <a href="https://maps.app.goo.gl/bbSJQV8FoyoSqkEh9" target="_blank">Abrir no Google Maps</a>
   </div>
 
-  <p class="alert">⚠️ Utilize apenas os links acima.</p>
+  <p class="alert">⚠️ Utilize apenas os links indicados.</p>
 </section>
 
-<section class="section">
+<section class="section reveal">
   <h2>Galeria</h2>
   <div class="gallery">
     <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
@@ -62,7 +78,7 @@
   </div>
 </section>
 
-<section class="section highlight">
+<section class="section highlight reveal">
   <h2>Lista de Presentes</h2>
   <div class="pix-box">
     <p><strong>PIX:</strong> assuncaomario21@icloud.com</p>
@@ -71,19 +87,19 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section reveal">
   <h2>Confirme sua Presença</h2>
   <form id="rsvpForm">
     <input type="text" name="nome" placeholder="Seu nome" required>
-    <input type="number" name="qtd" placeholder="Qtd de pessoas" required>
+    <input type="number" name="qtd" placeholder="Quantidade de pessoas" required>
     <button type="submit">Confirmar Presença</button>
     <p id="msg"></p>
   </form>
 </section>
 
-<section class="section highlight">
-  <h2>QR Code</h2>
-  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://assuncaomario21-beep.github.io/casamento-mario-maria/" alt="QR Code">
+<section class="section highlight reveal">
+  <h2>QR Code do Convite</h2>
+  <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://assuncaomario21-beep.github.io/casamento-mario-maria/">
 </section>
 
 <footer>
