@@ -46,6 +46,6 @@ document.getElementById("rsvpForm").addEventListener("submit", function(e){
   });
 
   document.getElementById("msg").innerText =
-    Obrigado, ${nome}! Sua presença foi confirmada 💚;
+`Obrigado, ${nome}! Sua presença foi confirmada 💚`;
   this.reset();
 });
