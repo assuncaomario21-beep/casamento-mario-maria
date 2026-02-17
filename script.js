@@ -1,6 +1,6 @@
 function copiarPix() {
   navigator.clipboard.writeText("assuncaomario21@icloud.com");
-  alert("PIX copiado!");
+  alert("PIX copiado com sucesso!");
 }
 
 function toggleMusic() {
@@ -9,17 +9,28 @@ function toggleMusic() {
 }
 
 const targetDate = new Date("2026-12-20T16:00:00").getTime();
+
 setInterval(() => {
   const now = new Date().getTime();
   const diff = targetDate - now;
 
-  const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const m = Math.floor((diff / (1000 * 60)) % 60);
-
-  document.getElementById("countdown").innerText =
-    Faltam ${d} dias, ${h}h e ${m}min;
+  document.getElementById("days").innerText =
+    Math.floor(diff / (1000 * 60 * 60 * 24));
+  document.getElementById("hours").innerText =
+    Math.floor((diff / (1000 * 60 * 60)) % 24);
+  document.getElementById("minutes").innerText =
+    Math.floor((diff / (1000 * 60)) % 60);
 }, 1000);
+
+const reveals = document.querySelectorAll(".reveal");
+window.addEventListener("scroll", () => {
+  reveals.forEach(r => {
+    const top = r.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      r.classList.add("active");
+    }
+  });
+});
 
 document.getElementById("rsvpForm").addEventListener("submit", function(e){
   e.preventDefault();
