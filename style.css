@@ -109,11 +109,21 @@ button, .buttons a {
 
 .music-btn {
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.8);
+  border: none;
+  border-radius: 50%;
   width: 45px;
   height: 45px;
-  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.music-btn:hover {
+  transform: scale(1.1);
 }
 
 .qr {
