@@ -185,3 +185,12 @@ document.getElementById("rsvpForm").addEventListener("submit", function(e){
     Obrigado, ${nome}! Sua presença foi confirmada 💚;
   this.reset();
 });
+.monograma-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.monograma {
+  width: 250px;
+  max-width: 90%;
+}
