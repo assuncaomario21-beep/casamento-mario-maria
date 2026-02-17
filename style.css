@@ -125,6 +125,15 @@ button, .buttons a {
 
 .music-btn:hover {
   transform: scale(1.1);
+  
+  .music-btn.playing {
+  animation: girar 3s linear infinite;
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 }
 
 .qr {
