@@ -481,3 +481,10 @@ a:hover {
   text-transform: uppercase;
   color: #555555;
 }
+    @media (max-width: 768px) {
+  .countdown span,
+  #countdown span,
+  .timer span {
+    font-size: 2rem;
+  }
+}
