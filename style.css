@@ -449,3 +449,35 @@ a:hover {
     height: 90vh;
   }
 }
+/* ============================= */
+/* ⏳ CONTAGEM REGRESSIVA */
+/* ============================= */
+.countdown,
+#countdown,
+.timer {
+  background: transparent;
+  color: #333333;
+  font-family: 'Playfair Display', serif;
+  padding: 24px;
+  text-align: center;
+}
+
+/* números */
+.countdown span,
+#countdown span,
+.timer span {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #6b7d5b;
+}
+
+/* texto (dias, horas, etc) */
+.countdown small,
+#countdown small,
+.timer small {
+  display: block;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #555555;
+}
