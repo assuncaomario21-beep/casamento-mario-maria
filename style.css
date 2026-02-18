@@ -1,18 +1,24 @@
 [15:19, 17/02/2026] Mario: :root {
   --verde: #6b7d5b;
-  --bege: #f1f1f1;
+  --fundo: #f1f1f1;
+  --texto-principal: #333333;
+  --texto-suave: #555555;
 }
 
 body {
   margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: var(--fundo-site);
   font-family: 'Montserrat', sans-serif;
   background: var(--bege);
-  color: #333;
+  color: var(--texto-principal);
 }
 
 .hero {
   height: 100vh;
-  background: linear-gradient(
+  background:
+    linear-gradient(
     rgba(245,241,234,.85),
     rgba(245,241,234,.95)
   ),
@@ -20,23 +26,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .overlay {
   height: 100%;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 24px;
+  color: #ffffff;
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-weight: 500;
+}
+h1 {
+  font-size:3rem;
+}
+p {
+  color: var(--texto-suave);
 }
 
 .verse {
