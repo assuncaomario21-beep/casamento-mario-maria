@@ -9,8 +9,8 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background-color: var(--fundo-site);
-  font-family: 'Montserrat', sans-serif;
+  background-color: #f1f1f1;
+  font-family: 'playfair display', serif;
   background: var(--bege);
   color: var(--texto-principal);
 }
@@ -60,7 +60,7 @@ p {
 }
 
 .highlight {
-  background: white;
+  background: transparent;
 }
 
 .text {
