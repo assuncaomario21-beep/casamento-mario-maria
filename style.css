@@ -275,3 +275,37 @@ button, .buttons a {
     padding-bottom: 60px;
   }
 }
+.versiculo-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.versiculo {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.linha-dois {
+  display: block;
+  margin-top: 6px;
+}
+
+.referencia {
+  font-size: 0.95rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+  .versiculo-box {
+    padding: 0 24px;
+  }
+
+  .versiculo {
+    font-size: 1rem;
+  }
+}
