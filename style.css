@@ -1,6 +1,6 @@
-/* ===================================================== */
-/* 🌍 VARIÁVEIS GLOBAIS */
-/* ===================================================== */
+/* =====================================================
+   🌿 VARIÁVEIS GLOBAIS
+===================================================== */
 :root {
   --verde: #6b7d5b;
   --fundo-site: #F1F1F1;
@@ -9,13 +9,9 @@
   --max-largura: 900px;
 }
 
-/* ===================================================== */
-/* 🔧 RESET + BASE GLOBAL */
-/* ===================================================== */
-* {
-  box-sizing: border-box;
-}
-
+/* =====================================================
+   🌍 BASE GLOBAL
+===================================================== */
 html, body {
   margin: 0;
   padding: 0;
@@ -25,56 +21,9 @@ html, body {
   color: var(--texto-principal);
 }
 
-/* ===================================================== */
-/* 🖼️ HERO */
-/* ===================================================== */
-.hero {
-  height: 100vh;
-  background:
-    linear-gradient(
-      rgba(241,241,241,.85),
-      rgba(241,241,241,.95)
-    ),
-    url('https://images.unsplash.com/photo-1529634806980-85c1d5d2c1a4')
-    center / cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay {
-  text-align: center;
-  padding: 24px;
-}
-
-/* ===================================================== */
-/* ✍️ TIPOGRAFIA */
-/* ===================================================== */
-h1, h2 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  color: #3b3b3b;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-bottom: 16px;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 16px;
-}
-
-p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--texto-suave);
-}
-
-/* ===================================================== */
-/* 📦 SEÇÕES */
-/* ===================================================== */
+/* =====================================================
+   📦 SEÇÕES
+===================================================== */
 section {
   padding: 80px 24px;
 }
@@ -85,79 +34,96 @@ section {
   margin-right: auto;
 }
 
-/* ===================================================== */
-/* 📖 TEXTO ESPECIAL */
-/* ===================================================== */
-.verse {
-  font-style: italic;
-  max-width: 700px;
+/* =====================================================
+   🖼️ HERO
+===================================================== */
+.hero {
+  min-height: 100vh;
+  padding: 80px 20px 40px;
+  background:
+    linear-gradient(
+      rgba(241,241,241,.90),
+      rgba(241,241,241,.95)
+    ),
+    url('https://images.unsplash.com/photo-1529634806980-85c1d5d2c1a4')
+    center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  max-width: var(--max-largura);
   margin: auto;
+  text-align: center;
+}
+
+/* =====================================================
+   ✍️ TIPOGRAFIA
+===================================================== */
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--texto-suave);
+}
+
+/* =====================================================
+   📖 VERSÍCULO
+===================================================== */
+.verse {
+  max-width: 700px;
+  margin: 30px auto;
+  font-style: italic;
   color: #4a4a4a;
 }
 
-/* ===================================================== */
-/* 🌿 LINKS E BOTÕES */
-/* ===================================================== */
-a {
-  color: var(--verde);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-button,
-.buttons a {
-  background: var(--verde);
-  color: white;
-  padding: 12px 26px;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-/* ===================================================== */
-/* ⏳ CONTAGEM REGRESSIVA (VERDE) */
-/* ===================================================== */
+/* =====================================================
+   ⏳ CONTAGEM REGRESSIVA – PREMIUM
+===================================================== */
 .countdown-box {
   display: flex;
-  gap: 20px;
   justify-content: center;
-  margin: 30px 0;
+  gap: 40px;
+  margin: 50px 0;
   flex-wrap: wrap;
 }
 
 .countdown-box div {
-  background: rgba(107,125,91,0.15);
-  border: 2px solid var(--verde);
-  border-radius: 16px;
-  padding: 16px 22px;
-  min-width: 90px;
   text-align: center;
 }
 
 .countdown-box span {
-  font-size: 2.6rem;
-  font-weight: bold;
+  font-size: 3.2rem;
+  font-weight: 500;
   color: var(--verde);
+  display: block;
 }
 
 .countdown-box small {
-  display: block;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--texto-suave);
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
-/* ===================================================== */
-/* 🖼️ GALERIA */
-/* ===================================================== */
+/* =====================================================
+   🖼️ GALERIA
+===================================================== */
 .gallery {
   display: flex;
-  gap: 16px;
+  gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -167,55 +133,74 @@ button,
   border-radius: 12px;
 }
 
-/* ===================================================== */
-/* 💳 PIX */
-/* ===================================================== */
+/* =====================================================
+   📍 MAPA
+===================================================== */
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: 0;
+  border-radius: 12px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* =====================================================
+   💚 PIX
+===================================================== */
 .pix-box {
   background: transparent;
+  display: inline-block;
   padding: 30px;
   border-radius: 12px;
   text-align: center;
 }
 
-/* ===================================================== */
-/* 🎵 BOTÃO DE MÚSICA */
-/* ===================================================== */
-.music-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 9999;
-  background: rgba(255,255,255,0.85);
+/* =====================================================
+   🔳 QR CODE
+===================================================== */
+.qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.qr img {
+  width: 180px;
+  border-radius: 16px;
+  padding: 16px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.qr p {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+/* =====================================================
+   🔘 BOTÕES
+===================================================== */
+button, .buttons a {
+  background: var(--verde);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
   border: none;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
-.music-btn:hover {
-  transform: scale(1.1);
-}
-
-.music-btn.playing {
-  animation: girar 3s linear infinite;
-}
-
-@keyframes girar {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* ===================================================== */
-/* ✨ ANIMAÇÕES */
-/* ===================================================== */
+/* =====================================================
+   ✨ ANIMAÇÃO SUAVE
+===================================================== */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: 0.8s;
+  transition: .8s;
 }
 
 .reveal.active {
@@ -223,9 +208,9 @@ button,
   transform: translateY(0);
 }
 
-/* ===================================================== */
-/* 📱 RESPONSIVO */
-/* ===================================================== */
+/* =====================================================
+   📱 RESPONSIVO
+===================================================== */
 @media (max-width: 768px) {
 
   section {
@@ -241,10 +226,6 @@ button,
   }
 
   .countdown-box span {
-    font-size: 2rem;
-  }
-
-  .hero {
-    height: 90vh;
+    font-size: 2.2rem;
   }
 }
