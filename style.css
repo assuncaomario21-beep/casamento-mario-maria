@@ -488,3 +488,13 @@ a:hover {
     font-size: 2rem;
   }
 }
+*/
+.countdown,
+#countdown,
+.timer,
+.countdown * ,
+#countdown * ,
+.timer * {
+  background-color: #F1F1F1 !important;
+  color: #333333 !important;
+}
