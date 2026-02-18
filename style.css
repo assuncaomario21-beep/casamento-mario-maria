@@ -288,3 +288,13 @@ document.getElementById("rsvpForm").addEventListener("submit", function(e){
     transform: translateY(0);
   }
 }
+.section > *{
+  max-width: 900px:;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  section {
+    padding: 56px 20px;
+  }
+}
