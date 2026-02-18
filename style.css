@@ -56,8 +56,7 @@ p {
 }
 
 .section {
-  padding: 70px 20px;
-  text-align: center;
+  padding: 80px 24px;
 }
 
 .highlight {
@@ -69,7 +68,11 @@ p {
   margin: auto;
   line-height: 1.9;
 }
-
+@media (max-width: 768px) {
+  section {
+    padding: 56px 20px;
+  }
+}
 .countdown-box {
   display: flex;
   gap: 20px;
