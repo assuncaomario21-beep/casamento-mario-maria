@@ -113,5 +113,16 @@
 </footer>
 
 <script src="script.js"></script>
+  <audio id="music" autoplay loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener('click', () => {
+  const music = document.getElementById('music');
+  if (music.paused) music.play();
+}, { once: true });
+</script>
+  
 </body>
 </html>
