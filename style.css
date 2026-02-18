@@ -269,3 +269,9 @@ button, .buttons a {
     padding: 0 16px;
   }
 }
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
