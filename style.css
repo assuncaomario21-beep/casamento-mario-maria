@@ -298,3 +298,154 @@ document.getElementById("rsvpForm").addEventListener("submit", function(e){
     padding: 56px 20px;
   }
 }
+
+  */
+:root {
+  --fundo-site: #F1F1F1;
+  --verde: #6b7d5b;
+
+  --texto-principal: #333333;
+  --texto-suave: #555555;
+
+  --max-largura: 900px;
+}
+
+/* ===================================================== */
+/* 🌍 BASE GLOBAL */
+/* ===================================================== */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: var(--fundo-site);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--texto-principal);
+}
+
+/* ===================================================== */
+/* 📦 SEÇÕES (ESPAÇAMENTO PADRÃO) */
+/* ===================================================== */
+section {
+  padding: 80px 24px;
+}
+
+/* ===================================================== */
+/* 📐 CONTEÚDO CENTRALIZADO */
+/* ===================================================== */
+.section > * {
+  max-width: var(--max-largura);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===================================================== */
+/* 🖼️ HERO (PRIMEIRA IMPRESSÃO) */
+/* ===================================================== */
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(
+      rgba(241,241,241,.85),
+      rgba(241,241,241,.95)
+    ),
+    url('https://images.unsplash.com/photo-1529634806980-85c1d5d2c1a4')
+    center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* ===================================================== */
+/* ✨ OVERLAY DO HERO */
+/* ===================================================== */
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  color: #ffffff;
+}
+
+/* ===================================================== */
+/* ✍️ TIPOGRAFIA */
+/* ===================================================== */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  color: #3b3b3b;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--texto-suave);
+}
+
+/* ===================================================== */
+/* 📖 TEXTO ESPECIAL (VERSÍCULO) */
+/* ===================================================== */
+.verse {
+  font-style: italic;
+  max-width: 700px;
+  margin: auto;
+  color: #4a4a4a;
+}
+
+/* ===================================================== */
+/* 🎯 BLOCOS DE DESTAQUE */
+/* ===================================================== */
+.highlight {
+  background: transparent;
+  padding: 0;
+}
+
+/* ===================================================== */
+/* 🌿 LINKS */
+/* ===================================================== */
+a {
+  color: var(--verde);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===================================================== */
+/* 📱 RESPONSIVO (CELULAR) */
+/* ===================================================== */
+@media (max-width: 768px) {
+
+  section {
+    padding: 56px 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: 90vh;
+  }
+}
