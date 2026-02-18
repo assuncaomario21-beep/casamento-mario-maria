@@ -22,7 +22,7 @@ body {
     rgba(245,241,234,.85),
     rgba(245,241,234,.95)
   ),
-  url('https://images.unsplash.com/photo-1529634806980-85c1d5d2c1a4') center/cover;
+  url('https://images.unsplash.com/photo-1529634806980-85c1d5d2c1a4') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,7 +112,7 @@ iframe {
 }
 
 .pix-box {
-  background: white;
+  background: transparent;
   display: inline-block;
   padding: 30px;
   border-radius: 12px;
