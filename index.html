@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <!-- ================= HERO / CAPA ================= -->
+  <!-- HERO -->
   <section class="hero">
     <div class="overlay">
       <div class="monograma-container">
@@ -21,14 +21,15 @@
     </div>
   </section>
 
-  <!-- ================= VERSÍCULO ================= -->
+  <!-- VERSÍCULO -->
   <section class="section section-light">
     <p class="verse">
-      “Mil cairão ao teu lado, e dez mil à tua direita, mas tu não serás atingido.” <strong>Salmos 91:7</strong>
+      “Mil cairão ao teu lado, e dez mil à tua direita, mas tu não serás atingido.” 
+      <strong>Salmos 91:7</strong>
     </p>
   </section>
 
-  <!-- ================= NOSSA HISTÓRIA ================= -->
+  <!-- NOSSA HISTÓRIA -->
   <section class="section reveal">
     <h2>Nossa História</h2>
     <p class="historia">
@@ -39,7 +40,7 @@
     </p>
   </section>
 
-  <!-- ================= CONTAGEM REGRESSIVA ================= -->
+  <!-- CONTAGEM REGRESSIVA -->
   <section class="section section-light">
     <h2>Contagem Regressiva</h2>
     <div class="countdown-elegant">
@@ -49,7 +50,7 @@
     </div>
   </section>
 
-  <!-- ================= CERIMÔNIA & RECEPÇÃO ================= -->
+  <!-- CERIMÔNIA & RECEPÇÃO -->
   <section class="section reveal">
     <h2>Cerimônia & Recepção</h2>
     <p><strong>Fazenda Vale dos Eucaliptos</strong></p>
@@ -60,7 +61,7 @@
     </div>
   </section>
 
-  <!-- ================= GALERIA ================= -->
+  <!-- GALERIA -->
   <section class="section reveal">
     <h2>Galeria</h2>
     <div class="gallery">
@@ -70,7 +71,7 @@
     </div>
   </section>
 
-  <!-- ================= LISTA DE PRESENTES / PIX ================= -->
+  <!-- LISTA DE PRESENTES / PIX -->
   <section class="section section-light reveal">
     <h2>Lista de Presentes</h2>
     <div class="pix-box">
@@ -80,7 +81,7 @@
     </div>
   </section>
 
-  <!-- ================= CONFIRME SUA PRESENÇA ================= -->
+  <!-- CONFIRME SUA PRESENÇA -->
   <section class="section reveal">
     <h2>Confirme sua Presença</h2>
     <form id="rsvpForm">
@@ -91,53 +92,23 @@
     </form>
   </section>
 
-  <!-- ================= QR CODE ================= -->
+  <!-- QR CODE -->
   <section class="section section-light reveal">
     <h2>QR Code do Convite</h2>
     <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://assuncaomario21-beep.github.io/casamento-mario-maria/">
   </section>
 
-  <!-- ================= RODAPÉ ================= -->
+  <!-- RODAPÉ -->
   <footer>
     <p>Com amor, Mário & Maria 💚</p>
   </footer>
 
-  <!-- ================= AUDIO ================= -->
+  <!-- ÁUDIO -->
   <audio id="music" autoplay loop>
     <source src="musica.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- ================= SCRIPTS ================= -->
-  <script>
-    // Contagem regressiva
-    const targetDate = new Date("December 20, 2026 16:00:00").getTime();
-    const daysEl = document.getElementById('days');
-    const hoursEl = document.getElementById('hours');
-    const minutesEl = document.getElementById('minutes');
-
-    setInterval(() => {
-      const now = new Date().getTime();
-      const diff = targetDate - now;
-      daysEl.innerText = Math.floor(diff / (1000*60*60*24));
-      hoursEl.innerText = Math.floor((diff % (1000*60*60*24))/(1000*60*60));
-      minutesEl.innerText = Math.floor((diff % (1000*60*60))/(1000*60));
-    }, 1000);
-
-    // Formulário RSVP
-    const form = document.getElementById('rsvpForm');
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      document.getElementById('msg').innerText = "Obrigado! Sua presença foi confirmada 💚";
-      form.reset();
-    });
-
-    // Copiar PIX
-    function copiarPix() {
-      navigator.clipboard.writeText("assuncaomario21@icloud.com").then(() => {
-        alert("PIX copiado!");
-      });
-    }
-  </script>
-
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
 </body>
 </html>
