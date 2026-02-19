@@ -9,202 +9,135 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <body>
 
-<!-- HERO / CAPA -->
-<section class="hero">
-  <div class="overlay">
-    <div class="monograma-container">
-      <img src="monograma.png" alt="Monograma Mario & Maria">
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="overlay">
+      <div class="monograma-container">
+        <img src="monograma.png" alt="Monograma Mario & Maria">
+      </div>
+      <h1>Mário & Maria</h1>
+      <p>20 de dezembro de 2026</p>
     </div>
+  </section>
 
-    <h1>Mario & Maria</h1>
-    <p>20 de dezembro de 2026</p>
-  </div>
-</section>
-
-<!-- VERSÍCULO -->
-<section class="section section-light">
-  <p class="verse">
-    “Mil cairão ao teu lado, e dez mil à tua direita,<br>
-    mas tu não serás atingido.”<br>
-    <strong>Salmos 91:7</strong>
-  </p>
-</section>
-
-<!-- NOSSA HISTÓRIA -->
-<section class="section">
-  <h2>Nossa História</h2>
-  <p>
-    Aqui entra o texto romântico de vocês 💚
-  </p>
-</section>
-
-<!-- CONTAGEM REGRESSIVA -->
-<section class="section section-light">
-  <h2>Contagem Regressiva</h2>
-
-  <div class="countdown-elegant">
-    <div><span id="days"></span><small>Dias</small></div>
-    <div><span id="hours"></span><small>Horas</small></div>
-    <div><span id="minutes"></span><small>Min</small></div>
-  </div>
-</section>
-
-<!-- LOCAL -->
-<section class="section">
-  <h2>Local do Casamento</h2>
-
-  <iframe src="SEU_LINK_DO_MAPA"></iframe>
-</section>
-
-<!-- CONFIRMAÇÃO -->
-<section class="section section-light">
-  <h2>Confirme sua presença</h2>
-
-  <form id="rsvpForm" class="rsvp-form">
-    <input type="text" name="nome" placeholder="Seu nome" required>
-    <input type="number" name="qtd" placeholder="Quantidade de pessoas" required>
-    <button type="submit">Confirmar Presença</button>
-    <p id="msg"></p>
-  </form>
-</section>
-
-<!-- PRESENTE / PIX -->
-<section class="section">
-  <h2>Lista de Presentes</h2>
-
-  <div class="pix-box">
-    <p>Chave Pix:</p>
-    <strong>assuncaomario21@icloud.com</strong><br><br>
-    <img src="qr.png" class="qr">
-  </div>
-</section>
-
-<!-- RODAPÉ -->
-<footer>
-  <p>Com amor, Mario & Maria 💚</p>
-</footer>
-
-</body>
-
-<audio id="music" loop>
- <source src="musica.mp3" type="audio/mpeg">
-</audio>
-
-<button class="music-btn" onclick="toggleMusic()">🎵</button>
-
-    <header class="hero">
-  <div class="overlay reveal">
-
-    <div class="monograma-container">
-      <img src="monograma.png" alt="Maria Clara e Mário - 20.12.2026" class="monograma">
-    </div>
-
-    <h1>Mário & Maria</h1> 
-
-  <div class="versiculo-box">
+  <!-- ================= VERSÍCULO ================= -->
+  <section class="section section-light">
     <p class="verse">
-      “Mil cairão ao teu lado, e dez mil à tua direita.<br>
-      <span class="linha-dois">mas tu não serás atingido!</span>
+      “Mil cairão ao teu lado, e dez mil à tua direita,<br>
+      mas tu não serás atingido.”<br>
+      <strong>Salmos 91:7</strong>
     </p>
-    <p class="referencia">
-      Salmos 91:7
-      
+  </section>
 
-    <div class="countdown-box">
-      <div><span id="days"></span><small>Dias</small></div>
-      <div><span id="hours"></span><small>Horas</small></div>
-      <div><span id="minutes"></span><small>Min</small></div>
+  <!-- ================= NOSSA HISTÓRIA ================= -->
+  <section class="section reveal">
+    <h2>Nossa História</h2>
+    <p>
+      Nos conhecemos em um culto no Jardim Alice, em Guarulhos.  
+      Com o tempo, a amizade cresceu, o carinho se fortaleceu e o amor floresceu de forma leve e verdadeira.  
+      O pedido de casamento aconteceu no Terraço Itália, marcando para sempre o início do nosso “sim”.
+    </p>
+  </section>
+
+  <!-- ================= CERIMÔNIA & RECEPÇÃO ================= -->
+  <section class="section section-light reveal">
+    <h2>Cerimônia & Recepção</h2>
+    <p><strong>Fazenda Vale dos Eucaliptos</strong></p>
+    <p>Mairiporã • SP</p>
+    <iframe src="https://www.google.com/maps?q=Fazenda+Vale+dos+Eucaliptos+Mairiporã&output=embed" loading="lazy"></iframe>
+    <div class="buttons">
+      <a href="https://maps.app.goo.gl/bbSJQV8FoyoSqkEh9" target="_blank">Abrir no Google Maps</a>
     </div>
+  </section>
 
-    <p class="date">20 de dezembro de 2026 • 16:00</p>
-  </div>
-</header>
+  <!-- ================= GALERIA ================= -->
+  <section class="section reveal">
+    <h2>Galeria</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+      <img src="https://images.unsplash.com/photo-1529634806980-85c1d5d2c1a4">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+    </div>
+  </section>
 
-<section class="section reveal">
-  <h2>Nossa História</h2>
-  <p class="text">
-    Nos conhecemos em um culto no Jardim Alice, em Guarulhos, em um encontro que parecia simples,
-    mas que Deus já havia escrito com propósito.<br><br>
+  <!-- ================= LISTA DE PRESENTES / PIX ================= -->
+  <section class="section section-light reveal">
+    <h2>Lista de Presentes</h2>
+    <div class="pix-box">
+      <p><strong>PIX:</strong> assuncaomario21@icloud.com</p>
+      <p><strong>Titular:</strong> Mário Assunção</p>
+      <button onclick="copiarPix()">Copiar PIX</button>
+    </div>
+  </section>
 
-    Com o tempo, a amizade cresceu, o carinho se fortaleceu e o amor floresceu de forma leve
-    e verdadeira.<br><br>
+  <!-- ================= CONFIRME SUA PRESENÇA ================= -->
+  <section class="section reveal">
+    <h2>Confirme sua Presença</h2>
+    <form id="rsvpForm">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="number" name="qtd" placeholder="Quantidade de pessoas" required>
+      <button type="submit">Confirmar Presença</button>
+      <p id="msg"></p>
+    </form>
+  </section>
 
-    O pedido de casamento aconteceu em um cenário inesquecível, no Terraço Itália,
-    marcando para sempre o início do nosso “sim”.<br><br>
+  <!-- ================= QR CODE ================= -->
+  <section class="section section-light reveal">
+    <h2>QR Code do Convite</h2>
+    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://assuncaomario21-beep.github.io/casamento-mario-maria/">
+  </section>
 
-    Hoje, mesmo vivendo um tempo de distância — ela no Paraguai e ele no Brasil —
-    seguimos firmes, unidos pela fé, pelo amor e pela certeza de que Deus conduz cada passo
-    até o dia do nosso casamento.
-  </p>
-</section>
+  <!-- ================= RODAPÉ ================= -->
+  <footer>
+    <p>Com amor, Mário & Maria 💚</p>
+  </footer>
 
-<section class="section highlight reveal">
-  <h2>Cerimônia & Recepção</h2>
-  <p><strong>Fazenda Vale dos Eucaliptos</strong></p>
-  <p>Mairiporã • SP</p>
+  <!-- ================= AUDIO ================= -->
+  <audio id="music" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music-btn" onclick="toggleMusic()">🎵</button>
 
-  <iframe
-    src="https://www.google.com/maps?q=Fazenda+Vale+dos+Eucaliptos+Mairiporã&output=embed"
-    loading="lazy">
-  </iframe>
+  <!-- ================= SCRIPTS ================= -->
+  <script src="script.js"></script>
+  <script>
+    // Contagem regressiva
+    const targetDate = new Date("December 20, 2026 16:00:00").getTime();
+    const daysEl = document.getElementById('days');
+    const hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
 
-  <div class="buttons">
-    <a href="https://maps.app.goo.gl/bbSJQV8FoyoSqkEh9" target="_blank">Abrir no Google Maps</a>
-  </div>
+    setInterval(() => {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+      daysEl.innerText = Math.floor(diff / (1000*60*60*24));
+      hoursEl.innerText = Math.floor((diff % (1000*60*60*24))/(1000*60*60));
+      minutesEl.innerText = Math.floor((diff % (1000*60*60))/(1000*60));
+    }, 1000);
 
-  <p class="alert">⚠️ Utilize apenas os links indicados.</p>
-</section>
+    // Formulário RSVP
+    const form = document.getElementById('rsvpForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      document.getElementById('msg').innerText = "Obrigado! Sua presença foi confirmada 💚";
+      form.reset();
+    });
 
-<section class="section reveal">
-  <h2>Galeria</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
-    <img src="https://images.unsplash.com/photo-1529634806980-85c1d5d2c1a4">
-    <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
-  </div>
-</section>
+    // Copiar PIX
+    function copiarPix() {
+      navigator.clipboard.writeText("assuncaomario21@icloud.com").then(() => {
+        alert("PIX copiado!");
+      });
+    }
 
-<section class="section highlight reveal">
-  <h2>Lista de Presentes</h2>
-  <div class="pix-box">
-    <p><strong>PIX:</strong> assuncaomario21@icloud.com</p>
-    <p><strong>Titular:</strong> Mário Assunção</p>
-    <button onclick="copiarPix()">Copiar PIX</button>
-  </div>
-</section>
+    // Música
+    const music = document.getElementById('music');
+    function toggleMusic() {
+      if(music.paused) music.play();
+      else music.pause();
+    }
+  </script>
 
-<section class="section reveal">
-  <h2>Confirme sua Presença</h2>
-  <form id="rsvpForm">
-    <input type="text" name="nome" placeholder="Seu nome" required>
-    <input type="number" name="qtd" placeholder="Quantidade de pessoas" required>
-    <button type="submit">Confirmar Presença</button>
-    <p id="msg"></p>
-  </form>
-</section>
-
-<section class="section highlight reveal">
-  <h2>QR Code do Convite</h2>
-  <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://assuncaomario21-beep.github.io/casamento-mario-maria/">
-</section>
-
-<footer>
-  <p>Com amor, Mário & Maria 💚</p>
-</footer>
-
-<script src="script.js"></script>
-  <audio id="music" autoplay loop>
-  <source src="musica.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-document.addEventListener('click', () => {
-  const music = document.getElementById('music');
-  if (music.paused) music.play();
-}, { once: true });
-</script>
-  
 </body>
 </html>
