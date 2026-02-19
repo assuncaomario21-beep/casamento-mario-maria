@@ -361,3 +361,106 @@ form button {
     padding: 15px;
   }
 }
+/* ============================= */
+/* SEÇÕES ORGANIZADAS */
+/* ============================= */
+
+.section {
+  padding: 100px 24px;
+  text-align: center;
+}
+
+/* fundo alternado */
+.section-light {
+  background-color: #f1f1f1;
+}
+
+/* títulos */
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+/* limite de largura */
+.section > * {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================= */
+/* CONTAGEM REGRESSIVA ELEGANTE */
+/* ============================= */
+
+.countdown-elegant {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.countdown-elegant div {
+  text-align: center;
+}
+
+.countdown-elegant span {
+  font-size: 3rem;
+  color: var(--verde);
+  font-family: 'Playfair Display', serif;
+}
+
+.countdown-elegant small {
+  display: block;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+/* ============================= */
+/* FORMULÁRIO BONITO */
+/* ============================= */
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.rsvp-form input {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.rsvp-form button {
+  background: var(--verde);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* RESPONSIVO */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 20px;
+  }
+
+  .countdown-elegant {
+    gap: 20px;
+  }
+
+  .countdown-elegant span {
+    font-size: 2.2rem;
+  }
+}
