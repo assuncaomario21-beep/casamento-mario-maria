@@ -70,7 +70,7 @@ body {
 
 /* SEÇÕES */
 .section {
-  padding: 50px 20px; /* diminuído */
+  padding: 120px 0px;
   text-align: center;
 }
 
@@ -82,7 +82,10 @@ body {
 .section-light {
   background: #ffffff;
 }
-
+.section-soft {
+  background: #f6f8f6;
+}
+    
 .verse {
  text-align: center;
   font-style: italic;
