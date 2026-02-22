@@ -100,14 +100,11 @@ body {
   display: flex;
   justify-content: center;
   gap: 25px;
-  font-size: 1.5rem; /* menor */
-  margin-top: 20px;
+  margin: 30px 0;
 }
-
-.countdown-elegant small {
-  display: block;
-  font-size: 0.75rem;
-}
+.contagem div {
+  text-align: center;
+  dobt-size:16px;
 
 /* GALERIA */
 .gallery {
@@ -206,3 +203,19 @@ body::before {
   max-width: 80%;
   margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+  .logo img {
+    max-width: 140px;
+    .container {
+      padding: 15px;
+ }
+    .contagem {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+    
