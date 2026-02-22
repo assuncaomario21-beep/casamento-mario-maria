@@ -1,28 +1,29 @@
-// Contagem regressiva
-const targetDate = new Date("December 20, 2026 16:00:00").getTime();
-const daysEl = document.getElementById('days');
-const hoursEl = document.getElementById('hours');
-const minutesEl = document.getElementById('minutes');
+// CONTAGEM REGRESSIVA
+const weddingDate = new Date("December 20, 2026 00:00:00").getTime();
 
-setInterval(() => {
+setInterval(function() {
   const now = new Date().getTime();
-  const diff = targetDate - now;
-  daysEl.innerText = Math.floor(diff / (1000*60*60*24));
-  hoursEl.innerText = Math.floor((diff % (1000*60*60*24))/(1000*60*60));
-  minutesEl.innerText = Math.floor((diff % (1000*60*60))/(1000*60));
+  const distance = weddingDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
 }, 1000);
 
-// Formulário RSVP
-const form = document.getElementById('rsvpForm');
-form.addEventListener('submit', function(e){
-  e.preventDefault();
-  document.getElementById('msg').innerText = "Obrigado! Sua presença foi confirmada 💚";
-  form.reset();
-});
 
-// Copiar PIX
+// COPIAR PIX
 function copiarPix() {
-  navigator.clipboard.writeText("assuncaomario21@icloud.com").then(() => {
-    alert("PIX copiado!");
-  });
+  navigator.clipboard.writeText("assuncaomario21@icloud.com");
+  alert("PIX copiado com sucesso!");
 }
+
+
+// RSVP
+document.getElementById("rsvpForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  document.getElementById("msg").innerText = "Presença confirmada com sucesso!";
+});
