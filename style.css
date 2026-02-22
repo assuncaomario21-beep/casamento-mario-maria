@@ -100,12 +100,26 @@ body {
 .countdown-elegant {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  margin: 30px 0;
+  gap: 30px;
+  margin: 40px;
+  flex-wrap: wrap;
 }
 .contagem div {
-  text-align: center;
-  dobt-size:16px;
+  backgroun: #ffffff;
+  padding: 25px 30px;
+  min-width: 110px;
+  border-radius: 12px;
+  box-shadow: 0 px 20px rgba(0,0,0,0.08);
+}
+ .contagem strong {
+  font-size: 36px;
+   display: block;
+   color: 556b5f;
+.contagem span {
+  font-size: 14px;
+  letyer-spacing: 1px;
+  text-transform: uppercase;
+}
 
 /* GALERIA */
 .gallery {
@@ -219,4 +233,11 @@ body::before {
       gap: 10px;
     }
   }
+  .section {
+    padding: 80px 0;
+  }
+  .section:not (:last-child) {
+    border-bottom: 1px solid #eee;
+  }
+}
     
