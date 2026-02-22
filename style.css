@@ -1,30 +1,49 @@
-body {
+/* RESET */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Montserrat', sans-serif;
   background: #f8f8f8;
   color: #333;
+  line-height: 1.6;
 }
 
+/* HERO */
 .hero {
-  height: 100vh;
+  height: 80vh; /* antes era 100vh */
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url("https://images.unsplash.com/photo-1519741497674-611481863552") center/cover;
+              url("https://images.unsplash.com/photo-1519741497674-611481863552") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  padding: 20px;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-size: 2.2rem; /* diminuído */
   margin: 10px 0;
 }
 
+.hero p {
+  font-size: 1rem;
+}
+
+/* SEÇÕES */
 .section {
-  padding: 60px 20px;
+  padding: 50px 20px; /* diminuído */
   text-align: center;
+}
+
+.section h2 {
+  font-size: 1.6rem; /* menor */
+  margin-bottom: 20px;
 }
 
 .section-light {
@@ -32,29 +51,33 @@ body {
 }
 
 .verse {
-  font-style: italic;
   max-width: 600px;
   margin: auto;
+  font-style: italic;
+  font-size: 0.95rem;
 }
 
 .historia {
   max-width: 700px;
   margin: auto;
-  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
+/* CONTAGEM */
 .countdown-elegant {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  font-size: 2rem;
+  gap: 25px;
+  font-size: 1.5rem; /* menor */
+  margin-top: 20px;
 }
 
 .countdown-elegant small {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
+/* GALERIA */
 .gallery {
   display: flex;
   gap: 15px;
@@ -63,35 +86,53 @@ body {
 }
 
 .gallery img {
-  width: 250px;
+  width: 200px; /* menor */
   border-radius: 10px;
 }
 
+/* PIX */
 .pix-box {
   background: #e6f4ea;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   display: inline-block;
+  font-size: 0.9rem;
 }
 
 button {
   background: #2e7d32;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 0.9rem;
 }
 
+button:hover {
+  opacity: 0.9;
+}
+
+/* MAPA */
 iframe {
   width: 100%;
-  max-width: 600px;
-  height: 300px;
+  max-width: 500px; /* menor */
+  height: 250px; /* menor */
   border: none;
   border-radius: 10px;
+  margin-top: 15px;
 }
 
+/* QR */
+.qr {
+  width: 180px; /* menor */
+  margin-top: 15px;
+}
+
+/* FOOTER */
 footer {
   background: #2e7d32;
   color: white;
-  padding: 20px;
+  padding: 15px;
+  font-size: 0.9rem;
+}
