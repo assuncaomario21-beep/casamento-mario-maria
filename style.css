@@ -168,3 +168,19 @@ body::before {
 
   z-index: -1; /* atrás de tudo */
 }
+.hero {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column; /* empilha verticalmente */
+  justify-content: center; /* centraliza vertical */
+  align-items: center; /* centraliza horizontal */
+
+  text-align: center;
+}
+
+.monograma-container img {
+  width: 300px; /* controla tamanho */
+  max-width: 80%;
+  margin-bottom: 20px;
+}
