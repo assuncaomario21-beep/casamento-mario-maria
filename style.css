@@ -218,13 +218,28 @@ body::before {
   max-width: 80%;
   margin-bottom: 20px;
 }
-
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px
+}
+   h2 {
+     font-size: 28px;
+     margin-bottom:20px;
+}
+p } 
+    font-size: 17px;
+    line-height: 1,7;
+    max-width: 650px;
+    magin: 0 auto;
+  }
+  
 @media (max-width: 768px) {
   h1 {
     font-size: 28px;
   }
   .logo img {
     max-width: 140px;
+    
     .container {
       padding: 15px;
  }
