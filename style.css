@@ -13,16 +13,19 @@ body {
 }
 
 /* HERO */
-.hero {
-  height: 80vh; /* antes era 100vh */
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url("https://images.unsplash.com/photo-1519741497674-611481863552") center/cover no-repeat;
+<.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url("monograma.png") center center no-repeat;
+  background-size: contain; /* mantém proporção */
+  background-color: #000; /* fundo caso sobre espaço */
+  
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
   padding: 20px;
+  color: #fff;
 }
 
 .hero h1 {
