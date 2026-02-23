@@ -365,3 +365,56 @@ h1, h2 {
     transform: translateY(0);
   }
 }
+/* ===== RSVP – CONFIRME SUA PRESENÇA (ISOLADO) ===== */
+#rsvpForm {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#rsvpForm input,
+#rsvpForm textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 30px;
+  border: 1px solid #d6d6d6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  outline: none;
+}
+
+#rsvpForm input:focus,
+#rsvpForm textarea:focus {
+  border-color: #556b5f;
+}
+
+#rsvpForm textarea {
+  border-radius: 22px;
+  resize: none;
+  height: 90px;
+}
+
+#rsvpForm button {
+  width: 100%;
+  padding: 18px;
+  border-radius: 35px;
+  border: none;
+  background-color: #556b5f; /* verde do monograma */
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#rsvpForm button:hover {
+  background-color: #445a50;
+  transform: translateY(-2px);
+}
+
+#rsvpForm #msg {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #556b5f;
+}
