@@ -8,51 +8,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="monograma-container">
-    <div class="logo">
-    <img src="monograma.png" alt="Monograma Mário & Maria">   
-  </div> 
+<main>
 
   <!-- HERO -->
-  <section class="section soft">
-    <div class="overlay">
-      <h1>Mário & Maria</h1>
-      <p>20 de dezembro de 2026</p>
-    </div>
+  <section class="section hero">
+    <img src="monograma.png" alt="Monograma Mário & Maria">
+    <h1>Mário & Maria</h1>
+    <p>20 de dezembro de 2026</p>
   </section>
 
   <!-- VERSÍCULO -->
   <section class="section section-light">
     <p class="verse">
-      “Mil cairão ao teu lado, e dez mil à tua direita, mas tu não serás atingido.” 
-      <strong>Salmos 91:7</strong>
+      “Mil cairão ao teu lado, e dez mil à tua direita, mas tu não serás atingido.”
+      <br><strong>Salmos 91:7</strong>
     </p>
   </section>
-  
+
   <!-- CONTAGEM REGRESSIVA -->
   <section class="section section-light">
     <h2>Contagem Regressiva</h2>
-   <div class="contagem"
-     <div>
-     <strong id="days">300</strong>
-     <span>Dias</span>
-     </div>
-    
-    <div>
-      <strong id="hours">22</strong>
-      <span>Horas</span>
+
+    <div class="countdown-elegant">
+      <div>
+        <strong id="days">0</strong>
+        <span>Dias</span>
+      </div>
+
+      <div>
+        <strong id="hours">0</strong>
+        <span>Horas</span>
+      </div>
+
+      <div>
+        <strong id="minutes">0</strong>
+        <span>Minutos</span>
+      </div>
     </div>
-    <strong id="minutes" >46</strong>
-    <spam>Minutos</spam>
-  <div> 
-</div>
   </section>
 
   <!-- NOSSA HISTÓRIA -->
-  <section class="section reveal">
+  <section class="section">
     <h2>Nossa História</h2>
-    <p class="historia">
+    <p>
       Nos conhecemos em um culto no Jardim Alice, em Guarulhos.<br><br>
       Com o tempo, a amizade cresceu, o carinho se fortaleceu e o amor floresceu de forma leve e verdadeira.<br><br>
       O pedido de casamento aconteceu no Terraço Itália, marcando para sempre o início do nosso “sim”.<br><br>
@@ -60,21 +60,24 @@
     </p>
   </section>
 
-
-
-  <!-- CERIMÔNIA & RECEPÇÃO -->
-  <section class="section reveal">
+  <!-- CERIMÔNIA -->
+  <section class="section">
     <h2>Cerimônia & Recepção</h2>
     <p><strong>Fazenda Vale dos Eucaliptos</strong></p>
     <p>Mairiporã • SP</p>
-    <iframe src="https://www.google.com/maps?q=Fazenda+Vale+dos+Eucaliptos+Mairiporã&output=embed" loading="lazy"></iframe>
-    <div class="buttons">
-      <a href="https://maps.app.goo.gl/bbSJQV8FoyoSqkEh9" target="_blank">Abrir no Google Maps</a>
-    </div>
+
+    <iframe
+      src="https://www.google.com/maps?q=Fazenda+Vale+dos+Eucaliptos+Mairiporã&output=embed"
+      loading="lazy">
+    </iframe>
+
+    <a class="map-btn" href="https://maps.app.goo.gl/bbSJQV8FoyoSqkEh9" target="_blank">
+      Abrir no Google Maps
+    </a>
   </section>
 
   <!-- GALERIA -->
-  <section class="section reveal">
+  <section class="section">
     <h2>Galeria</h2>
     <div class="gallery">
       <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
@@ -83,8 +86,8 @@
     </div>
   </section>
 
-  <!-- LISTA DE PRESENTES / PIX -->
-  <section class="section section-light reveal">
+  <!-- PRESENTES -->
+  <section class="section section-light">
     <h2>Lista de Presentes</h2>
     <div class="pix-box">
       <p><strong>PIX:</strong> assuncaomario21@icloud.com</p>
@@ -93,34 +96,36 @@
     </div>
   </section>
 
-  <!-- CONFIRME SUA PRESENÇA -->
-  <section class="section reveal">
+  <!-- RSVP -->
+  <section class="section">
     <h2>Confirme sua Presença</h2>
     <form id="rsvpForm">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="number" name="qtd" placeholder="Quantidade de pessoas" required>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="number" placeholder="Quantidade de pessoas" required>
       <button type="submit">Confirmar Presença</button>
       <p id="msg"></p>
     </form>
   </section>
 
-  <!-- QR CODE -->
-  <section class="section section-light reveal">
+  <!-- QR -->
+  <section class="section section-light">
     <h2>QR Code do Convite</h2>
     <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://assuncaomario21-beep.github.io/casamento-mario-maria/">
   </section>
 
-  <!-- RODAPÉ -->
-  <section class="section section-soft">
+  <!-- FOOTER -->
+  <footer>
     <p>Com amor, Mário & Maria 💚</p>
   </footer>
 
-  <!-- ÁUDIO -->
-  <audio id="music" autoplay loop>
-    <source src="musica.mp3" type="audio/mpeg">
-  </audio>
+</main>
 
-  <!-- SCRIPTS -->
-  <script src="script.js"></script>
+<!-- MÚSICA -->
+<audio autoplay loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<!-- JS -->
+<script src="script.js"></script>
 </body>
 </html>
