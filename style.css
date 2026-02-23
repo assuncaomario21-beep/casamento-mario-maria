@@ -515,3 +515,39 @@ body {
 .section-soft {
   background: #f2f2f2 !important;
 }
+/* ===== RSVP MODERNO ===== */
+.rsvp-form {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rsvp-form input,
+.rsvp-form textarea {
+  padding: 14px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.rsvp-form textarea {
+  resize: none;
+  height: 90px;
+}
+
+.rsvp-form button {
+  background: #556b5f;
+  color: white;
+  border-radius: 30px;
+  padding: 14px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+}
+
+.rsvp-form button:hover {
+  opacity: 0.9;
