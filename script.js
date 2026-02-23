@@ -27,3 +27,16 @@ document.getElementById("rsvpForm").addEventListener("submit", function(e) {
   e.preventDefault();
   document.getElementById("msg").innerText = "Presença confirmada com sucesso!";
 });
+
+function playMusic() {
+  const music = document.getElementById("bgMusic");
+
+  if (music.paused) {
+    music.volume = 0.6;
+    music.play();
+    document.querySelector(".music-btn").innerText = "🔇 Pausar música";
+  } else {
+    music.pause();
+    document.querySelector(".music-btn").innerText = "🎵 Ativar música";
+  }
+}
