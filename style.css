@@ -265,4 +265,36 @@ p }
     border-bottom: 1px solid #eee;
   }
 }
+/* ===== CENTRALIZAÇÃO GLOBAL ===== */
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===== SEÇÕES COMO PÁGINAS ===== */
+
+.section {
+  min-height: 100vh;           /* ocupa uma tela inteira */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     /* centraliza vertical */
+  align-items: center;         /* centraliza horizontal */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Limita largura dos textos */
+.section p,
+.section h1,
+.section h2 {
+  max-width: 650px;
+}
+
     
