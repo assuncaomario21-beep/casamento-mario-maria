@@ -440,6 +440,66 @@ h1, h2 {
   rgba(0,0,0,0.18);
   transition: all 0.3s ease;
 }
+/* ===== HERO CAPA DE REVISTA ===== */
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f2f2f2;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  animation: fadeHero 1.8s ease;
+}
+
+.hero-logo {
+  width: 260px;
+  max-width: 75%;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.hero-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #556b5f; /* verde elegante */
+}
+
+/* animação da capa */
+@keyframes fadeHero {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero-logo {
+    width: 200px;
+  }
+}
 
 .music-btn:hover {
   transform: translateY (-2px0;
