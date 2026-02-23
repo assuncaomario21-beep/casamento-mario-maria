@@ -261,3 +261,54 @@ h1, h2 {
 #rsvpForm button:hover {
   opacity: 0.9;
 }
+/* ===== CONTAGEM REGRESSIVA LUXO ===== */
+
+.countdown-section h2 {
+  margin-bottom: 40px;
+}
+
+.countdown-lux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.countdown-lux div {
+  text-align: center;
+}
+
+.countdown-lux strong {
+  font-size: 48px;
+  font-family: 'Playfair Display', serif;
+  color: #556b5f;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.countdown-lux span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 6px;
+  color: #777;
+}
+
+.countdown-lux .divider {
+  font-size: 28px;
+  color: #b5bdb8;
+  margin-top: -10px;
+}
+
+/* ===== AJUSTE FINO PARA CELULAR ===== */
+@media (max-width: 480px) {
+  .countdown-lux strong {
+    font-size: 38px;
+  }
+
+  .countdown-lux {
+    gap: 12px;
+  }
+}
