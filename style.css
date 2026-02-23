@@ -515,3 +515,40 @@ body {
 .section-soft {
   background: #f2f2f2 !important;
 }
+/* ===== CONTAGEM MODERNA ===== */
+.countdown-modern {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.countdown-modern div {
+  text-align: center;
+}
+
+.countdown-modern span {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #556b5f;
+  display: block;
+}
+
+.countdown-modern small {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .countdown-modern span {
+    font-size: 34px;
+  }
+
+  .countdown-modern {
+    gap: 20px;
+  }
+}
