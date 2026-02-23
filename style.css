@@ -312,3 +312,44 @@ h1, h2 {
     gap: 12px;
   }
 }
+/* ===== CONTAGEM REGRESSIVA PREMIUM ===== */
+
+.countdown-section h2 {
+  margin-bottom: 25px;
+}
+
+.countdown-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #444;
+  letter-spacing: 0.5px;
+
+  white-space: nowrap; /* FORÇA UMA LINHA */
+}
+
+.countdown-inline strong {
+  font-size: 26px;
+  font-weight: 600;
+  color: #556b5f; /* verde do monograma */
+}
+
+.countdown-inline .dot {
+  color: #aaa;
+  font-size: 20px;
+}
+
+/* ===== AJUSTE FINO MOBILE ===== */
+@media (max-width: 480px) {
+  .countdown-inline {
+    font-size: 16px;
+  }
+
+  .countdown-inline strong {
+    font-size: 22px;
+  }
+}
