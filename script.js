@@ -40,3 +40,35 @@ function playMusic() {
     document.querySelector(".music-btn").innerText = "🎵 Ativar música";
   }
 }
+// ===== MÚSICA DE FUNDO =====
+let musicStarted = false;
+
+function toggleMusic() {
+  const music = document.getElementById("bgMusic");
+  const btn = document.querySelector(".music-btn");
+
+  if (!musicStarted) {
+    music.volume = 0;
+    music.play();
+    musicStarted = true;
+
+    // Fade in suave
+    let vol = 0;
+    const fade = setInterval(() => {
+      if (vol < 0.6) {
+        vol += 0.05;
+        music.volume = vol;
+      } else {
+        clearInterval(fade);
+      }
+    }, 200);
+
+    btn.innerText = "🔇 Pausar música";
+  } else if (!music.paused) {
+    music.pause();
+    btn.innerText = "🎵 Música";
+  } else {
+    music.play();
+    btn.innerText = "🔇 Pausar música";
+  }
+}
