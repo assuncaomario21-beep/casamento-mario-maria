@@ -172,3 +172,92 @@ footer {
     flex-wrap: wrap;
   }
 }
+/* ===== PADRÃO DE FUNDO (todas as páginas iguais) ===== */
+.section,
+.section-light,
+.section-soft {
+  background: #f4f5f3; /* cinza elegante */
+}
+
+/* ===== CENTRALIZAÇÃO REAL ===== */
+body {
+  display: block;
+}
+
+.section {
+  text-align: center;
+}
+
+/* ===== TÍTULOS ===== */
+h1, h2 {
+  color: #556b5f; /* verde do monograma */
+  font-family: 'Playfair Display', serif;
+}
+
+/* ===== CONTAGEM REGRESSIVA MODERNA ===== */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 14px;
+  min-width: 110px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.time-box strong {
+  font-size: 42px;
+  color: #556b5f;
+  display: block;
+  font-family: 'Playfair Display', serif;
+}
+
+.time-box span {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+/* ===== GALERIA MENOR ===== */
+.gallery img {
+  width: 160px;
+}
+
+/* ===== CONFIRME SUA PRESENÇA ===== */
+#rsvpForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 350px;
+  margin-top: 20px;
+}
+
+#rsvpForm input {
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#rsvpForm button {
+  padding: 16px;
+  font-size: 18px;
+  border-radius: 30px;
+  background: #556b5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#rsvpForm button:hover {
+  opacity: 0.9;
+}
