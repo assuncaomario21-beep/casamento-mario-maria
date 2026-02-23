@@ -90,13 +90,14 @@
   <!-- RSVP -->
   <section class="section">
     <h2>Confirme sua Presença</h2>
-    <form id="rsvpForm">
-      <input type="text" placeholder="Seu nome" required>
-      <input type="number" placeholder="Quantidade de pessoas" required>
-      <button type="submit">Confirmar Presença</button>
-      <p id="msg"></p>
-    </form>
-  </section>
+    <form id="rsvpForm" class="fade-in">
+  <input type="text" placeholder="Seu nome" required>
+  <input type="number" placeholder="Quantidade de pessoas" required min="1">
+  <textarea placeholder="Deixe uma mensagem (opcional)"></textarea>
+
+  <button type="submit">Confirmar Presença</button>
+  <p id="msg"></p>
+</form>
 
   <!-- QR -->
   <section class="section section-light">
