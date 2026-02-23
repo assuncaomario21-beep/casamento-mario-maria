@@ -551,3 +551,15 @@ body {
 
 .rsvp-form button:hover {
   opacity: 0.9;
+  
+  /* ===== GALERIA ELEGANTE ===== */
+.gallery img {
+  width: 160px;
+  border-radius: 14px;
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+    width: 120px;
+  }
+}
